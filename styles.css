@@ -635,9 +635,6 @@ body .container main .main__content .main__creations .fish__eye p {
   }
 }
 @media (min-width: 730px) and (max-width: 880px) {
-  body .container {
-    background: lightblue;
-  }
   body .container header .header__content .header__menu {
     left: 30%;
     width: 45%;

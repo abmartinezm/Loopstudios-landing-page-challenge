@@ -1,0 +1,681 @@
+:root {
+  /*## Colors*/
+  /*### Primary*/
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark-Gray: hsl(0, 0%, 55%);
+  --Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+body .container {
+  width: 100vw;
+  height: auto;
+}
+body .container header .header__content {
+  padding: 5%;
+  width: 90%;
+  height: 90vh;
+  background-image: url("../images/mobile/image-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+body .container header .header__content .logo__icon {
+  margin-top: 2vh;
+  display: flex;
+  justify-content: space-between;
+}
+body .container header .header__content .logo__icon svg {
+  z-index: 100;
+}
+body .container header .header__content .logo__icon .close__open {
+  display: block;
+}
+body .container header .header__content .logo__icon .close__open svg {
+  z-index: 100;
+  position: absolute;
+  right: 5%;
+  cursor: pointer;
+}
+body .container header .header__content .logo__icon .close__open .close {
+  visibility: hidden;
+}
+body .container header .header__content .logo__icon .close__open .close.active {
+  visibility: visible;
+}
+body .container header .header__content .logo__icon .close__open .hamburger {
+  cursor: pointer;
+  z-index: 200;
+}
+body .container header .header__content .logo__icon .close__open .hamburger.active {
+  -webkit-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+  visibility: hidden;
+}
+body .container header .header__content .header__menu {
+  width: 93%;
+  margin-left: -6%;
+  padding: 5%;
+  height: 73%;
+  background-color: var(--Black);
+  color: var(--White);
+  display: block;
+  padding-top: 50%;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  right: 100%;
+}
+body .container header .header__content .header__menu ul {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  list-style: none;
+  text-decoration: none;
+  display: block;
+}
+body .container header .header__content .header__menu ul li {
+  width: auto;
+  height: auto;
+  display: block;
+  margin-bottom: 2vh;
+}
+body .container header .header__content .header__menu ul li a {
+  margin: 0 auto;
+  color: var(--White);
+  text-transform: uppercase;
+  font-size: 25px;
+  cursor: pointer;
+  width: 40%;
+  font-weight: 500;
+  text-align: left;
+  list-style: none;
+  text-decoration: none;
+}
+body .container header .header__content .header__menu ul li a:hover:after {
+  content: "";
+  color: #fff;
+  display: block;
+  width: 40px;
+  margin-left: 10%;
+  border-bottom: 3px solid #fff;
+}
+body .container header .header__content .header__menu.open {
+  right: 0px;
+  transition: right linear 0.2s;
+}
+body .container header .header__content h1 {
+  text-transform: uppercase;
+  color: var(--White);
+  margin-top: 30vh;
+  padding: 8%;
+  border: 2px solid var(--White);
+  font-weight: 100;
+  width: 83%;
+}
+body .container main .main__content {
+  width: 90%;
+  padding: 5%;
+  padding-top: 20%;
+}
+body .container main .main__content img {
+  width: 100%;
+}
+body .container main .main__content .subtitle {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 6vh;
+  font-size: 28px;
+  font-weight: 100;
+}
+body .container main .main__content .description {
+  width: 85%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  margin-top: 2vh;
+  color: var(--Very-Dark-Gray);
+  font-weight: 500;
+}
+body .container main .main__creations {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+body .container main .main__creations .creations {
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 6vh;
+  font-size: 28px;
+  font-weight: 100;
+}
+body .container main .main__creations .deep__earth,
+body .container main .main__creations .night__arcade,
+body .container main .main__creations .soccer__team,
+body .container main .main__creations .grid,
+body .container main .main__creations .from__above,
+body .container main .main__creations .borealis,
+body .container main .main__creations .curiosity,
+body .container main .main__creations .fish__eye {
+  width: 90%;
+  height: 10vh;
+  margin-bottom: 4vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5%;
+  cursor: pointer;
+}
+body .container main .main__creations .deep__earth p,
+body .container main .main__creations .night__arcade p,
+body .container main .main__creations .soccer__team p,
+body .container main .main__creations .grid p,
+body .container main .main__creations .from__above p,
+body .container main .main__creations .borealis p,
+body .container main .main__creations .curiosity p,
+body .container main .main__creations .fish__eye p {
+  text-transform: uppercase;
+  width: 30%;
+  font-size: 20px;
+  color: var(--White);
+  font-weight: 400;
+}
+body .container main .main__creations .deep__earth {
+  margin-top: 4vh;
+  background-image: url("../images/mobile/image-deep-earth.jpg");
+}
+body .container main .main__creations .deep__earth:hover {
+  opacity: 0.3;
+}
+body .container main .main__creations .night__arcade {
+  background-image: url("../images/mobile/image-night-arcade.jpg");
+}
+body .container main .main__creations .night__arcade:hover {
+  opacity: 0.3;
+}
+body .container main .main__creations .soccer__team {
+  background-image: url("../images/mobile/image-soccer-team.jpg");
+}
+body .container main .main__creations .soccer__team:hover {
+  opacity: 0.3;
+}
+body .container main .main__creations .grid {
+  background-image: url("../images/mobile/image-grid.jpg");
+}
+body .container main .main__creations .grid:hover {
+  opacity: 0.3;
+}
+body .container main .main__creations .from__above {
+  background-image: url("../images/mobile/image-from-above.jpg");
+}
+body .container main .main__creations .from__above p {
+  width: 35%;
+}
+body .container main .main__creations .from__above:hover {
+  opacity: 0.3;
+}
+body .container main .main__creations .borealis {
+  background-image: url("../images/mobile/image-pocket-borealis.jpg");
+}
+body .container main .main__creations .borealis:hover {
+  opacity: 0.3;
+}
+body .container main .main__creations .curiosity {
+  background-image: url("../images/mobile/image-curiosity.jpg");
+}
+body .container main .main__creations .curiosity:hover {
+  opacity: 0.3;
+}
+body .container main .main__creations .fish__eye {
+  background-image: url("../images/mobile/image-fisheye.jpg");
+}
+body .container main .main__creations .fish__eye:hover {
+  opacity: 0.3;
+}
+body .container main .main__creations button {
+  width: 50%;
+  height: 5vh;
+  margin-left: 25%;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: var(--Black);
+  border: 0.1rem solid #000;
+  font-weight: 600;
+  background-color: transparent;
+  margin-bottom: 10vh;
+  cursor: pointer;
+}
+body .container main .main__creations button:hover {
+  background-color: var(--Black);
+  color: var(--White);
+}
+body .container footer .footer__content {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background-color: var(--Black);
+  position: relative;
+}
+body .container footer .footer__content .logo {
+  margin-left: 33%;
+  transform: scale(0.7);
+  margin-top: 6vh;
+}
+body .container footer .footer__content .footer__info {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+body .container footer .footer__content .footer__info ul {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  list-style: none;
+  text-decoration: none;
+}
+body .container footer .footer__content .footer__info ul li {
+  width: 80%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 2vh;
+}
+body .container footer .footer__content .footer__info ul li a {
+  margin: 0 auto;
+  color: var(--White);
+  font-weight: 500;
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+}
+body .container footer .footer__content .footer__info ul li a:hover:after {
+  content: "";
+  color: #fff;
+  display: block;
+  width: 20px;
+  margin: 0 auto;
+  border-bottom: 3px solid #fff;
+}
+body .container footer .footer__content .icons {
+  width: 35%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 6vh;
+  justify-content: space-between;
+  align-items: center;
+}
+body .container footer .footer__content .icons svg {
+  transform: scale(0.8);
+  cursor: pointer;
+  padding-bottom: 1vh;
+}
+body .container footer .footer__content .icons svg:hover {
+  border-bottom: 2px solid #fff;
+}
+body .container footer .footer__content p {
+  margin: 0 auto;
+  margin-top: 2vh;
+  text-align: center;
+  color: var(--Dark-Gray);
+  cursor: pointer;
+}
+@media (min-width: 730px) and (max-width: 1600px) {
+  body .container header .header__content {
+    height: 60vh;
+  }
+  body .container header .header__content .logo__icon {
+    margin-top: 1vh;
+  }
+  body .container header .header__content .logo__icon .close__open {
+    display: none;
+  }
+  body .container header .header__content .header__menu {
+    width: auto;
+    margin-left: -6%;
+    padding: 5%;
+    height: auto;
+    background-color: transparent;
+    color: var(--White);
+    display: flex;
+    padding-top: 5%;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    right: 0;
+    left: 50%;
+  }
+  body .container header .header__content .header__menu ul {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+  }
+  body .container header .header__content .header__menu ul li {
+    width: 80%;
+    height: auto;
+    margin-bottom: 2vh;
+  }
+  body .container header .header__content .header__menu ul li a {
+    margin: 0 auto;
+    color: var(--White);
+    text-transform: none;
+  }
+  body .container header .header__content h1 {
+    margin-top: 15vh;
+    padding: 2%;
+    font-size: 50px;
+    width: 35%;
+  }
+  body .container header .header__content .br-that {
+    display: none;
+  }
+  body .container main .main__content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body .container main .main__content img {
+    margin-top: -25vh;
+    width: 70%;
+    height: 81vh;
+  }
+  body .container main .main__content .vr-info {
+    width: 30%;
+    background: #fff;
+    margin-left: -10%;
+    padding: 5%;
+    padding-bottom: 0;
+  }
+  body .container main .main__content .vr-info .subtitle {
+    width: 100%;
+    height: 10%;
+    margin-top: 0;
+    text-align: left;
+    font-size: 34px;
+    margin-bottom: 10vh;
+  }
+  body .container main .main__content .vr-info .description {
+    width: 100%;
+    text-align: left;
+    font-size: 18.5px;
+  }
+  body .container main .main__content .main__creations {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  body .container main .main__content .main__creations .creations {
+    width: 100%;
+    text-align: left;
+  }
+  body .container main .main__content .main__creations .deep__earth,
+body .container main .main__content .main__creations .night__arcade,
+body .container main .main__content .main__creations .soccer__team,
+body .container main .main__content .main__creations .grid,
+body .container main .main__content .main__creations .from__above,
+body .container main .main__content .main__creations .borealis,
+body .container main .main__content .main__creations .curiosity,
+body .container main .main__content .main__creations .fish__eye {
+    width: 13.5%;
+    height: 60vh;
+    margin-right: 2%;
+    margin-top: 6vh;
+    position: relative;
+  }
+  body .container main .main__content .main__creations .deep__earth p,
+body .container main .main__content .main__creations .night__arcade p,
+body .container main .main__content .main__creations .soccer__team p,
+body .container main .main__content .main__creations .grid p,
+body .container main .main__content .main__creations .from__above p,
+body .container main .main__content .main__creations .borealis p,
+body .container main .main__content .main__creations .curiosity p,
+body .container main .main__content .main__creations .fish__eye p {
+    width: 70%;
+    font-size: 40px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+  }
+  body .container main .main__content .main__creations .grid,
+body .container main .main__content .main__creations .fish__eye {
+    margin-right: 0;
+  }
+  body .container main .main__content .main__creations button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    margin-top: 5vh;
+  }
+  body .container footer .footer__content {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  body .container footer .footer__content .logo {
+    margin-left: 4%;
+    margin-top: 1.5%;
+  }
+  body .container footer .footer__content .footer__info {
+    width: 45%;
+    height: auto;
+    margin-left: 4%;
+    display: flex;
+    justify-content: space-between;
+  }
+  body .container footer .footer__content .footer__info ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 2vh;
+    margin-bottom: 6vh;
+  }
+  body .container footer .footer__content .footer__info ul li {
+    width: 19%;
+    height: auto;
+    margin-left: -8%;
+    text-align: center;
+    margin-bottom: 0vh;
+  }
+  body .container footer .footer__content .footer__info ul li a {
+    margin: 0 0;
+    color: var(--White);
+    font-weight: 500;
+    text-align: left;
+    list-style: none;
+    text-decoration: none;
+  }
+  body .container footer .footer__content .icons {
+    width: 10%;
+    height: auto;
+    margin: 0;
+    display: flex;
+    position: absolute;
+    right: 5%;
+    top: 3vh;
+    align-items: center;
+  }
+  body .container footer .footer__content p {
+    margin: 0;
+    margin-top: 2vh;
+    position: absolute;
+    right: 5%;
+    top: 7vh;
+  }
+}
+@media (min-width: 730px) and (max-width: 1305px) {
+  body .container main .main__content img {
+    margin-top: -20vh;
+    width: 70%;
+    height: 81vh;
+  }
+  body .container main .main__content .main__creations .deep__earth p,
+body .container main .main__content .main__creations .night__arcade p,
+body .container main .main__content .main__creations .soccer__team p,
+body .container main .main__content .main__creations .grid p,
+body .container main .main__content .main__creations .from__above p,
+body .container main .main__content .main__creations .borealis p,
+body .container main .main__content .main__creations .curiosity p,
+body .container main .main__content .main__creations .fish__eye p {
+    width: 70%;
+    font-size: 34px;
+  }
+  body .container header .header__content h1 {
+    padding: 2%;
+    width: 45%;
+  }
+  body .container footer .footer__content .footer__info {
+    width: 45%;
+    height: auto;
+    margin-left: 2.5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  body .container footer .footer__content .footer__info ul li {
+    width: 25%;
+  }
+  body .container footer .footer__content .icons {
+    width: 17%;
+    right: 5%;
+    top: 3vh;
+  }
+}
+@media (min-width: 730px) and (max-width: 1030px) {
+  body .container main .main__content .vr-info .subtitle {
+    width: 100%;
+    height: 6%;
+    font-size: 30px;
+    margin-bottom: 10vh;
+  }
+  body .container main .main__content .vr-info .description {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+  }
+  body .container main .main__content img {
+    margin-top: -18vh;
+    width: 70%;
+    height: 81vh;
+  }
+  body .container main .main__content .main__creations .deep__earth p,
+body .container main .main__content .main__creations .night__arcade p,
+body .container main .main__content .main__creations .soccer__team p,
+body .container main .main__content .main__creations .grid p,
+body .container main .main__content .main__creations .from__above p,
+body .container main .main__content .main__creations .borealis p,
+body .container main .main__content .main__creations .curiosity p,
+body .container main .main__content .main__creations .fish__eye p {
+    width: 70%;
+    font-size: 28px;
+  }
+}
+@media (min-width: 730px) and (max-width: 990px) {
+  body .container header .header__content .header__menu {
+    left: 40%;
+    width: 45%;
+  }
+  body .container header .header__content .header__menu ul {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 0;
+  }
+  body .container header .header__content .header__menu ul li {
+    width: 100%;
+    margin-right: 5%;
+  }
+  body .container main .main__content img {
+    margin-top: -20vh;
+    width: 70%;
+    height: 81vh;
+  }
+  body .container main .main__content .main__creations .deep__earth p,
+body .container main .main__content .main__creations .night__arcade p,
+body .container main .main__content .main__creations .soccer__team p,
+body .container main .main__content .main__creations .grid p,
+body .container main .main__content .main__creations .from__above p,
+body .container main .main__content .main__creations .borealis p,
+body .container main .main__content .main__creations .curiosity p,
+body .container main .main__content .main__creations .fish__eye p {
+    width: 70%;
+    font-size: 25px;
+  }
+  body .container header .header__content h1 {
+    padding: 2%;
+    width: 45%;
+  }
+  body .container footer .footer__content .footer__info {
+    width: 45%;
+    height: auto;
+    margin-left: 2.5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  body .container footer .footer__content .footer__info ul li {
+    width: 25%;
+  }
+  body .container footer .footer__content .icons {
+    width: 17%;
+    right: 5%;
+    top: 3vh;
+  }
+}
+@media (min-width: 730px) and (max-width: 880px) {
+  body .container {
+    background: lightblue;
+  }
+  body .container header .header__content .header__menu {
+    left: 30%;
+    width: 45%;
+  }
+  body .container header .header__content h1 {
+    font-size: 30px;
+  }
+  body .container main .main__content img {
+    margin-top: -15vh;
+    width: 70%;
+    height: 81vh;
+  }
+  body .container main .main__content .vr-info .subtitle {
+    width: 100%;
+    height: 6%;
+    font-size: 25px;
+    margin-bottom: 10vh;
+  }
+  body .container main .main__content .vr-info .description {
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+  }
+  body .container footer .footer__content .footer__info {
+    width: 45%;
+    height: auto;
+    margin-left: 2.5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  body .container footer .footer__content .footer__info ul li {
+    width: 40%;
+  }
+  body .container footer .footer__content .icons {
+    width: 25%;
+    right: 5%;
+    top: 2vh;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
